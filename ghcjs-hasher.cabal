@@ -2,15 +2,16 @@ name:                ghcjs-hasher
 version:             0.1.0.0
 synopsis:            Initial project template from stack
 description:         Please see README.md
-homepage:            http://github.com/githubuser/ghcjs-hasher#readme
+homepage:            http://github.com/plow-technologies/ghcjs-hasher#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
+author:              Kevin Cotrone
+maintainer:          kevincotrone@gmail.com
 copyright:           2016 Author Here
 category:            Web
 build-type:          Simple
--- extra-source-files:
+extra-source-files:  jsbits/hasher.js
+                     jsbits/signals.js
 cabal-version:       >=1.10
 
 library

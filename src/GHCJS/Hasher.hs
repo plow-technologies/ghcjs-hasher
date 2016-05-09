@@ -12,6 +12,7 @@ module GHCJS.Hasher
 import Data.JSString ()
 import GHCJS.Types
 import GHCJS.Foreign.Callback
+import GHCJS.Marshal
 
 -- | Init hasher
 hasherInit :: IO ()
