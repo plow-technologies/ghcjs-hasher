@@ -429,6 +429,13 @@ var hasher = (function(window){
     return hasher;
 };
 
+// This shims window for running in
+// nodejs so that the ghcjs thrunner
+// doesn't fail
+if(typeof window == "undefined"){
+    window = {};
+}
+
 if (typeof define === 'function' && define.amd) {
     define(['signals'], factory);
 } else if (typeof exports === 'object') {
