@@ -427,6 +427,10 @@
      * @see Signal
      */
     // alias for backwards compatibility (see #gh-44)
+    if(typeof signals == "undefined"){
+        signals = {};
+    }
+    
     signals.Signal = Signal;
 
 
